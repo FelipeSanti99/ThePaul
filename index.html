@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta Tags Importantes -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Paul - Manteles de Ecocuero Personalizados</title>
+    <meta name="description" content="The Paul ofrece manteles de ecocuero personalizados para negocios gastronómicos. Descubre cómo podemos aportar elegancia y sustentabilidad a tu establecimiento.">
+
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos Personalizados -->
+    <style>
+        /* Estilos Personalizados */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #000 !important;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #000 !important;
+        }
+        .nav-link.active {
+            text-decoration: underline;
+        }
+        header {
+            position: relative;
+            background-color: #333333; /* Fondo gris oscuro */
+            color: #fff;
+            padding: 150px 0;
+            text-align: center;
+        }
+        header .container {
+            position: relative;
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 4em;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #000;
+        }
+        .btn-custom {
+            background-color: #000;
+            border-color: #000;
+            color: #fff;
+        }
+        .btn-custom:hover {
+            background-color: #333;
+            border-color: #333;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .contact-button-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .contact-button-fixed .btn {
+            background-color: #000;
+            border-color: #000;
+            color: #fff;
+            margin-left: 10px;
+        }
+        .contact-button-fixed .btn:hover {
+            background-color: #333;
+            border-color: #333;
+        }
+        /* Estilos para las imágenes de los manteles */
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        /* Estilos para iconos de redes sociales en el pie de página */
+        footer a {
+            color: #fff;
+        }
+        footer a:hover {
+            color: #ccc;
+        }
+        /* Ajustes para enlaces y botones */
+        a {
+            color: #000;
+        }
+        a:hover {
+            color: #555;
+        }
+        
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <div class="container">
+            <a class="navbar-brand" href="#">The Paul</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#000;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resenas">Reseñas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <header id="inicio">
+        <div class="container">
+            <h1>Elegancia y Sustentabilidad</h1>
+            <p class="lead">Manteles de Ecocuero Personalizados para tu Restaurante</p>
+            <a href="#contacto" class="btn btn-custom btn-lg mt-4" id="botonInicio">Contáctanos</a>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros" style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>En <strong>The Paul</strong>, somos especialistas en crear manteles de ecocuero personalizados, ideales para negocios gastronómicos que buscan destacar en elegancia y responsabilidad ambiental.</p>
+                    <p>Nuestro compromiso es brindar productos de alta calidad que reflejen la identidad y estilo únicos de cada establecimiento.</p>
+                    <!-- Botón de Más Información -->
+                    <a href="#" class="btn btn-custom mt-3" data-bs-toggle="modal" data-bs-target="#modalSobreNosotros" id="botonMasInfo1">Más Información</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="/paginaWeb/imagen0.jpg" class="img-fluid" alt="Equipo The Paul">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Sobre Nosotros -->
+    <div class="modal fade" id="modalSobreNosotros" tabindex="-1" aria-labelledby="modalSobreNosotrosLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="modalSobreNosotrosLabel" class="modal-title">Más Sobre Nosotros</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p>Nacimos con la visión de fusionar elegancia y sustentabilidad en el mundo gastronómico. Cada mantel que producimos es una pieza única, diseñada para realzar la experiencia de tus clientes mientras cuidamos del medio ambiente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Productos -->
+    <section id="productos" style="background-color: #f9f9f9; padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">Algunos de nuestros productos personalizados</h2>
+            <div class="row">
+                <!-- Imagen 1 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="/paginaWeb/imagen1.jpg" class="gallery-img" alt="Mantel Personalizado 1">
+                </div>
+                <!-- Imagen 2 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="/paginaWeb/imagen2.jpg" class="gallery-img" alt="Mantel Personalizado 2">
+                </div>
+                <!-- Imagen 3 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="/paginaWeb/imagen3.jpg" class="gallery-img" alt="Mantel Personalizado 3">
+                </div>
+                <!-- Imagen 4 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="/paginaWeb/imagen4.jpg" class="gallery-img" alt="Mantel Personalizado 4">
+                </div>
+                <!-- Imagen 5 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="/paginaWeb/imagen5.jpg" class="gallery-img" alt="Mantel Personalizado 5">
+                </div>
+                <!-- Imagen 6 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="/paginaWeb/imagen6.jpg" class="gallery-img" alt="Mantel Personalizado 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Reseñas -->
+    <section id="resenas" style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">Lo que Dicen Nuestros Clientes</h2>
+            <!-- Primera Fila de Reseñas -->
+            <div class="row">
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"The Paul transformó la apariencia de nuestro restaurante. Los clientes aman el nuevo look."</p>
+                        <footer class="blockquote-footer">Mayra González, <cite title="Restaurante Delicias">Restaurante El Encuentro</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"La calidad y el servicio al cliente son excepcionales. ¡Altamente recomendados!"</p>
+                        <footer class="blockquote-footer">Romina Fernández, <cite title="Café Aroma">Restaurante Osvaldito</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- Segunda Fila de Reseñas -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"Nuestros clientes notaron la diferencia de inmediato. Los manteles de The Paul son increíbles."</p>
+                        <footer class="blockquote-footer">Cristian Gómez, <cite title="Bistro La Plaza">Restaurante Guapas</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"El servicio personalizado y la calidad del producto superaron nuestras expectativas."</p>
+                        <footer class="blockquote-footer">Marcos López, <cite title="Restaurante El Puerto">Somos Palta</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" style="background-color: #f9f9f9; padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>¿Interesado en nuestros manteles de ecocuero personalizados? Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                    <form id="formularioContacto" action="mailto:hernan_santi@hotmail.com" method="post" enctype="text/plain">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo" name="correo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom" id="botonEnviarMensaje">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <img src="/paginaWeb/imagen7.jpg" class="img-fluid" alt="Contacto The Paul">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botones Fijos de WhatsApp e Instagram -->
+    <div class="contact-button-fixed d-flex">
+        <a href="https://wa.me/5491133166131" class="btn btn-lg me-2" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://www.instagram.com/thepauloficial?igsh=d2ttZ3J6b3BqOWZl" class="btn btn-lg" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 The Paul. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript de Bootstrap (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scripts Adicionales -->
+    <script>
+        // Inicializar dataLayer si no está definido
+        window.dataLayer = window.dataLayer || [];
+
+        // Función para trackear clics en botones
+        function trackButtonClick(event) {
+            var button = event.target;
+            dataLayer.push({
+                'event': 'botonClick',
+                'botonID': button.id,
+                'botonTexto': button.textContent.trim()
+            });
+        }
+
+        // Agregar event listeners a los botones
+        var botones = document.querySelectorAll('a.btn, button.btn');
+        botones.forEach(function(boton) {
+            boton.addEventListener('click', trackButtonClick);
+        });
+
+        // Evento para el envío del formulario de contacto
+        var formulario = document.getElementById('formularioContacto');
+        formulario.addEventListener('submit', function(event) {
+            dataLayer.push({
+                'event': 'formularioEnviado',
+                'formID': 'formularioContacto'
+            });
+        });
+    </script>
+</body>
+</html>
